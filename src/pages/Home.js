@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MainNavigation from "../components/MainNavigation";
 
 // Using Link instead of "a" prevents the default event and changes the URL
 // without sending the HTTP request
