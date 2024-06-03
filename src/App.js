@@ -10,10 +10,10 @@ const router = createBrowserRouter(
   [
     {
       path: '/', element: <RootLayout />, children: [
-        { path: '/', element: <HomePage /> },
-        { path: '/products', element: <ProductsPage />},
+        { index: true, element: <HomePage /> },
+        { path: '/products', element: <ProductsPage /> },
         // to pass dynamic parameters, we use the ":" followed by the parameter name
-        { path: '/products/:productId', element: <ProductDetailPage />},
+        { path: '/products/:productId', element: <ProductDetailPage /> },
       ], errorElement: <ErrorPage />
     },
 
